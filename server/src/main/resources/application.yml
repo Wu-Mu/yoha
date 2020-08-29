@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/yohadatabase?useUnicode=true&character=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: Lch18992803037
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  servlet:
+    multipart:
+      enabled: false
+
+mybatis:
+  type-aliases-package: com.yoha.server.model
+  config-location: classpath:mybatis.xml

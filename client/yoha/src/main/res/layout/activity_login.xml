@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.example.yoha.LoginActivity">
+  <include layout="@layout/custom_toolbar" />
+
+
+
+  <TextView
+    android:id="@+id/loginiconUser"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="190dp"
+    android:layout_marginStart="30dp"
+    android:text="Username"
+    android:textSize="18sp"/>
+
+  <EditText
+    android:id="@+id/logineditUser"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="180dp"
+    android:layout_marginStart="150dp"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="@string/your_username"
+
+    android:inputType="textPersonName"
+    android:textSize="15sp"
+    />
+
+  <TextView
+    android:id="@+id/loginiconPassword"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="240dp"
+    android:layout_marginStart="30dp"
+    android:text="@string/password"
+    android:textSize="18sp"/>
+
+  <EditText
+    android:id="@+id/logineditPassword"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="230dp"
+    android:layout_marginStart="150dp"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="@string/your_password"
+    android:inputType="textPassword"
+    android:textSize="15sp"/>
+
+  <Button
+    android:id="@+id/loginBnt"
+
+    android:layout_width="250dp"
+
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="240dp"
+
+    android:layout_marginStart="80dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+
+    android:layout_centerVertical="true"
+    android:text="@string/login"/>
+
+  <Button
+    android:id="@+id/enterregisterBnt"
+
+    android:layout_width="250dp"
+
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="190dp"
+
+    android:layout_marginStart="80dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+
+    android:layout_centerVertical="true"
+    android:text="@string/register"/>
+
+</RelativeLayout>

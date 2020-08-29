@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.example.yoha.UserUploadActivity">
+  <!--<include layout="@layout/custom_toolbar" />-->
+
+
+
+  <include layout="@layout/custom_toolbar" />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/bt"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="切换"/>
+
+  <ListView
+    android:id="@+id/lv"
+    android:layout_below="@id/bt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
+  <GridView
+    android:id="@+id/grid"
+    android:layout_below="@id/bt"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:numColumns="2"/>
+</RelativeLayout>

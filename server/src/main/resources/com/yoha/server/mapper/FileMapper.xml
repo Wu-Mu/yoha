@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yoha.server.mapper.FileMapper">
+  <insert id="addFile" useGeneratedKeys="true" keyProperty="id">
+    insert into file(name, ownerid)
+    values (#{name}, #{ownerid})
+  </insert>
+  <select id="getFile" resultType="File">
+    select * from file
+    <where>
+      <if test="id!=null">
+        id=#{id}
+      </if>
+      <if test="name!=null">
+        and name=#{name}
+      </if>
+      <if test="ownerid!=null">
+        and ownerid=#{ownerid}
+      </if>
+      <if test="uploadtime!=null">
+        and uploadtime=#{uploadtime}
+      </if>
+    </where>
+  </select>
+
+  <update id="updateFile">
+    update file
+    <set>
+      <if test="id != null">id=#{id},</if>
+      <if test="name != null">name=#{name},</if>
+      <if test="ownerid != null">ownerid=#{ownerid},</if>
+      <if test="uploadtime != null">uploadtime=#{uploadtime}</if>
+    </set>
+    where id=#{id}
+  </update>
+
+  <select id="getUserFiles" resultType="java.lang.String">
+    select name
+    from file
+    where ownerid = #{ownerid}
+  </select>
+
+  <select id="getGalleryFiles" resultType="java.lang.String">
+    select name
+    from file
+    where id between #{0} and #{1}
+    order by id ASC
+  </select>
+
+  <select id="getMaxID" resultType="java.lang.Integer">
+    select max(id)
+    from file
+
+  </select>
+
+</mapper>

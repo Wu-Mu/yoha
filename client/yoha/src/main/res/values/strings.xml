@@ -1,0 +1,59 @@
+<resources>
+  <string name="app_name">yoha</string>
+  <string name="gallery">GALLERY</string>
+  <string name="x">x</string>
+  <string name="r">R</string>
+  <string name="todo">TODO</string>
+  <string name="change">change</string>
+  <string name="take_a_photo">Take A Photo</string>
+  <string name="share">Share</string>
+  <string name="username">Username</string>
+  <string name="repassword">Repassword</string>
+  <string name="mail">Mail:</string>
+  <string name="mail_address">Mail Address</string>
+  <string name="register">REGISTER</string>
+  <string name="password">Password</string>
+  <string name="login">LOGIN</string>
+  <string name="logout">logout</string>
+
+  <string name="activity_title_main"></string>
+  <string name="action_settings">Settings</string>
+  <string name="filters">FILTERS</string>
+  <string name="edit">EDIT</string>
+
+  <string name="lbl_brightness">BRIGHTNESS</string>
+  <string name="lbl_contrast">CONTRAST</string>
+  <string name="lbl_saturation">SATURATION</string>
+  <string name="tab_filters">STYLE</string>
+  <string name="tab_edit">EDIT</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="roboto_medium">sans-serif-medium</string>
+  <string name="filter_normal">Normal</string>
+  <string name="style_horses">Horses</string>
+  <string name="style_scream">Scream</string>
+  <string name="style_pink_blue">Pink</string>
+  <string name="style_poppy_field">Field</string>
+  <string name="style_ritmo">Ritmo</string>
+  <string name="Userinfo">Scream</string>
+
+
+  <string name="style_mosaic">Mosaic</string>
+
+  <string name="action_save">SAVE</string>
+  <string name="action_open">OPEN</string>
+  <string name="open">open</string>
+  <string name="close">close</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="your_username">Your username</string>
+  <string name="your_password">Your password</string>
+  <string name="border_top">Border Top</string>
+  <string name="border_bottom">Border Bottom</string>
+  <string name="image_url">Image Url</string>
+  <string name="change_password">Change Password</string>
+  <string name="settingslogout">Logout</string>
+    <string name="action_load">action_upload</string>
+
+</resources>

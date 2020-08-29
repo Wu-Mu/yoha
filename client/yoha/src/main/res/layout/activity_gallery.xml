@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.yoha.GalleryActivity">
+
+    <TextView
+        android:id="@+id/iconGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:autoLink="all"
+        android:text="@string/gallery"
+        android:textColor="#FF3990"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+
+            android:layout_weight="0.5"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="1dp"
+            android:padding="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/changanhua"/>
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="1dp"
+            android:padding="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/changan"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview3"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="260dp"
+            android:layout_marginEnd="1dp"
+            android:padding="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/vanstar"/>
+
+        <ImageView
+            android:id="@+id/imageview4"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="1dp"
+            android:padding="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/stract"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview5"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="380dp"
+            android:layout_marginEnd="1dp"
+            android:padding="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/inadvance"/>
+
+        <ImageView
+            android:id="@+id/imageview6"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="380dp"
+            android:layout_marginStart="1dp"
+            android:padding="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/romantic"/>
+    </LinearLayout>
+
+
+    <!--<mehdi.sakout.fancybuttons.FancyButton-->
+    <!--android:id="@+id/randomBnt"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--fancy:fb_borderWidth="1dp"-->
+    <!--fancy:fb_defaultColor="#007AB800"-->
+    <!--fancy:fb_focusColor="#009BD823"-->
+    <!--fancy:fb_fontIconResource="&#xf103;"-->
+    <!--fancy:fb_fontIconSize="25dp"-->
+    <!--fancy:fb_iconPosition="left"-->
+    <!--fancy:fb_radius="25dp"-->
+    <!--fancy:fb_text=""-->
+    <!--fancy:fb_textColor="#090707"/>-->
+
+    <Button
+        android:id="@+id/randomBnt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/fresh"
+
+        android:text=""
+
+        />
+
+
+
+    <include layout="@layout/custom_drawerlayout"/>
+    <include layout="@layout/custom_toolbar"/>
+
+</RelativeLayout>
